@@ -22,7 +22,8 @@ async function loadStations() {
     if (company.toLowerCase() == 'trtc') {
         let trtc = await loadStation('trtc');
         let tymc = await loadStation('tymc');
-        return trtc.concat(tymc);
+        let ntdlrt = await loadStation('ntdlrt');
+        return trtc.concat(tymc).concat(ntdlrt);
     } else if (company.toLowerCase() == 'krtc') {
         let krtc = await loadStation('krtc');
         let klrt = await loadStation('klrt');
