@@ -4,20 +4,41 @@
         "name": "R",
         "expandable": true,
         "zIndex": 0,
-        "singleLineLength": 24
+        "singleLineLength": 24,
+        "timeDelta": [
+            {
+                "from": "R3",
+                "to": "R24",
+                "delta": "13222222222222312222223"
+            }
+        ]
     },
     {
         "company": "KRTC",
         "name": "O",
         "expandable": true,
         "zIndex": 0,
-        "singleLineLength": 15
+        "singleLineLength": 15,
+        "timeDelta": [
+            {
+                "from": "O1",
+                "to": "OT1",
+                "delta": "2212221212123"
+            }
+        ]
     },
     {
         "company": "KLRT",
         "name": "C",
         "expandable": true,
         "zIndex": 1,
-        "singleLineLength": 21
+        "singleLineLength": 21,
+        "timeDelta": [
+            {
+                "from": "C32",
+                "to": "C24",
+                "delta": "222223322322322222322323322232"
+            }
+        ]
     }
 ]
