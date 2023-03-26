@@ -126,5 +126,36 @@
                 "delta": "55323543933333334354"
             }
         ]
+    },
+    {
+        "company": "NTDLRT",
+        "name": "V",
+        "expandable": false,
+        "zIndex": 0,
+        "timeDelta": [
+            {
+                "from": "V01",
+                "to": "V11",
+                "delta": "2222323333"
+            },
+            {
+                "from": "V09",
+                "to": "V26",
+                "delta": "333"
+            }
+        ]
+    },
+    {
+        "company": "NTALRT",
+        "name": "K",
+        "expandable": false,
+        "zIndex": 0,
+        "timeDelta": [
+            {
+                "from": "K01",
+                "to": "K09",
+                "delta": "13224234"
+            }
+        ]
     }
 ]

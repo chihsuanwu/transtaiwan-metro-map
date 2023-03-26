@@ -50,6 +50,7 @@ const COLOR = {
     "TRTC_G03A": "#cfdb00",
     "TYMC_A": "#8246AF",
     "NTDLRT_V": "#E5554F",
+    "NTALRT_K": "#C3B091",
     "KRTC_R": "#e20b65",
     "KRTC_O": "#faa73f",
     "KLRT_C": "#7cbd52",
