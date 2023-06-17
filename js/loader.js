@@ -29,6 +29,9 @@ async function loadStations() {
         let krtc = await loadStation('krtc');
         let klrt = await loadStation('klrt');
         return krtc.concat(klrt);
+    } else if (company.toLowerCase() == 'tmrt') {
+        let tmrt = await loadStation('tmrt');
+        return tmrt;
     }
 }
 
@@ -40,7 +43,7 @@ async function loadStation(op) {
 }
 
 async function loadData() {
-    const prefix = company == 'trtc' ? 'Taipei' : 'Kaohsiung';
+    const prefix = company == 'trtc' ? 'Taipei' : company == 'krtc' ? 'Kaohsiung' : 'Taichung';
     const specResult = await fetch(`${prefix}/data/spec.json`);
     const linesResult = await fetch(`${prefix}/data/lines.json`);
     const fullResult = await fetch(`${prefix}/data/full.json`);

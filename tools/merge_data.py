@@ -14,7 +14,7 @@ def merge_data(dir: str):
 
 def main():
     if len(sys.argv) != 2:
-        print('usage: python svg.py <area:Taipei|Kaohsiung>')
+        print('usage: python svg.py <area:Taipei|Kaohsiung|Taichung>')
         return
 
     area = sys.argv[1]

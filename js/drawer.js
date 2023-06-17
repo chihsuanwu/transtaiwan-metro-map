@@ -54,6 +54,7 @@ const COLOR = {
     "KRTC_R": "#e20b65",
     "KRTC_O": "#faa73f",
     "KLRT_C": "#7cbd52",
+    "TMRT_1": "#8EC31C",
     "External": "#CCCCCC"
 }
 
