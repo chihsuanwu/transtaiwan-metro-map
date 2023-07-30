@@ -165,7 +165,9 @@
                     "pos": [4, 0],
                     "dir": "T",
                     "break_en": 6,
-                    "name_offset_en": "R"
+                    "break_ko": 3,
+                    "name_offset_en": "R",
+                    "name_offset_ko": "R"
                 },
                 {
                     "id": "7",
@@ -271,7 +273,9 @@
                     "pos": [2, 19],
                     "dir": "B",
                     "name_offset": "R",
-                    "name_offset_en": "R"
+                    "name_offset_en": "R",
+                    "name_offset_ja": "R",
+                    "name_offset_ko": "R"
                 },
                 {
                     "id": "5",
@@ -303,7 +307,9 @@
                     "pos": [-6.5, 10],
                     "dir": "B",
                     "name_offset": "L",
-                    "name_offset_en": "L"
+                    "name_offset_en": "L",
+                    "name_offset_ja": "L",
+                    "name_offset_ko": "L"
                 },
                 {
                     "id": "11",
@@ -354,13 +360,15 @@
                 {
                     "id": "20",
                     "pos": [-14, -8],
-                    "dir": "L"
+                    "dir": "L",
+                    "break_ko": 6
                 },
                 {
                     "id": "21A",
                     "pos": [-12.25, -9],
                     "break_en": 7,
-                    "dir": "T"
+                    "dir": "T",
+                    "break_ko": 4
                 },
                 {
                     "id": "21",
@@ -372,20 +380,23 @@
                     "id": "22",
                     "pos": [-6.75, -9],
                     "break_en": 19,
-                    "dir": "T"
+                    "dir": "T",
+                    "break_ko": 4
                 },
                 {
                     "id": "23",
                     "pos": [-4, -9],
                     "break_en": 8,
-                    "dir": "B"
+                    "dir": "B",
+                    "break_ko": 3
                 },
                 {
                     "id": "24",
                     "pos": [-1.25, -9],
                     "break_en": 8,
                     "dir": "B",
-                    "type": "T"
+                    "type": "T",
+                    "break_ko": 3
                 },
                 {
                     "id": "27",

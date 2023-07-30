@@ -71,7 +71,7 @@ const NAME_SPACE_LARGE = 32 //* 2
 
 const LINE_WIDTH = 6 //* 2
 
-const TEXT_SIZE = ((DRAW == "ZH" || DRAW == "JA") ? 26 : 16) / 2;
+const TEXT_SIZE = ((DRAW == "ZH" || DRAW == "JA" || DRAW == "KO") ? 26 : 16) / 2;
 
 function drawStation(lineID, station, station_decode, c) {
     const pos = station["pos"];
@@ -266,6 +266,9 @@ function drawStation(lineID, station, station_decode, c) {
         case "JA":
             break_key = "break_ja";
             break;
+        case "KO":
+            break_key = "break_ko";
+            break;
     }
 
     const slice = station[break_key];
@@ -285,19 +288,31 @@ function drawStation(lineID, station, station_decode, c) {
             ctx.textAlign = "center";
             ctx.textBaseline = "top";
             if (slice != null) {
-                if ((DRAW == "EN" && station["name_offset_en"] == "R") || (DRAW == "ZH" && station["name_offset"] == "R")) {
+                if ((DRAW == "EN" && station["name_offset_en"] == "R") ||
+                    (DRAW == "ZH" && station["name_offset"] == "R") ||
+                    (DRAW == "JA" && station["name_offset_ja"] == "R") ||
+                    (DRAW == "KO" && station["name_offset_ko"] == "R")) {
                     ctx.textAlign = "left";
                 }
-                if ((DRAW == "EN" && station["name_offset_en"] == "L") || (DRAW == "ZH" && station["name_offset"] == "L")) {
+                if ((DRAW == "EN" && station["name_offset_en"] == "L") ||
+                    (DRAW == "ZH" && station["name_offset"] == "L") ||
+                    (DRAW == "JA" && station["name_offset_ja"] == "L") ||
+                    (DRAW == "KO" && station["name_offset_ko"] == "L")) {
                     ctx.textAlign = "right";
                 }
                 ctx.fillText(name_line_1, posX, posY + NAME_SPACE);
                 ctx.fillText(name_line_2, posX, posY + NAME_SPACE + TEXT_SIZE);
             } else {
-                if ((DRAW == "EN" && station["name_offset_en"] == "R") || (DRAW == "ZH" && station["name_offset"] == "R")) {
+                if ((DRAW == "EN" && station["name_offset_en"] == "R") ||
+                    (DRAW == "ZH" && station["name_offset"] == "R") ||
+                    (DRAW == "JA" && station["name_offset_ja"] == "R") ||
+                    (DRAW == "KO" && station["name_offset_ko"] == "R")) {
                     ctx.textAlign = "left";
                 }
-                if ((DRAW == "EN" && station["name_offset_en"] == "L") || (DRAW == "ZH" && station["name_offset"] == "L")) {
+                if ((DRAW == "EN" && station["name_offset_en"] == "L") ||
+                    (DRAW == "ZH" && station["name_offset"] == "L") ||
+                    (DRAW == "JA" && station["name_offset_ja"] == "L") ||
+                    (DRAW == "KO" && station["name_offset_ko"] == "L")) {
                     ctx.textAlign = "right";
                 }
                 ctx.fillText(name_line_1, posX, posY + NAME_SPACE);
@@ -386,19 +401,31 @@ function drawStation(lineID, station, station_decode, c) {
             ctx.textAlign = "center";
             ctx.textBaseline = "bottom";
             if (slice != null) {
-                if ((DRAW == "EN" && station["name_offset_en"] == "R") || (DRAW == "ZH" && station["name_offset"] == "R")) {
+                if ((DRAW == "EN" && station["name_offset_en"] == "R") ||
+                    (DRAW == "ZH" && station["name_offset"] == "R") ||
+                    (DRAW == "JA" && station["name_offset_ja"] == "R") ||
+                    (DRAW == "KO" && station["name_offset_ko"] == "R")) {
                     ctx.textAlign = "left";
                 }
-                if ((DRAW == "EN" && station["name_offset_en"] == "L") || (DRAW == "ZH" && station["name_offset"] == "L")) {
+                if ((DRAW == "EN" && station["name_offset_en"] == "L") ||
+                    (DRAW == "ZH" && station["name_offset"] == "L") ||
+                    (DRAW == "JA" && station["name_offset_ja"] == "L") ||
+                    (DRAW == "KO" && station["name_offset_ko"] == "L")) {
                     ctx.textAlign = "right";
                 }
                 ctx.fillText(name_line_1, posX, posY - NAME_SPACE - TEXT_SIZE);
                 ctx.fillText(name_line_2, posX, posY - NAME_SPACE);
             } else {
-                if ((DRAW == "EN" && station["name_offset_en"] == "R") || (DRAW == "ZH" && station["name_offset"] == "R")) {
+                if ((DRAW == "EN" && station["name_offset_en"] == "R") ||
+                    (DRAW == "ZH" && station["name_offset"] == "R") ||
+                    (DRAW == "JA" && station["name_offset_ja"] == "R") ||
+                    (DRAW == "KO" && station["name_offset_ko"] == "R")) {
                     ctx.textAlign = "left";
                 }
-                if ((DRAW == "EN" && station["name_offset_en"] == "L") || (DRAW == "ZH" && station["name_offset"] == "L")) {
+                if ((DRAW == "EN" && station["name_offset_en"] == "L") ||
+                    (DRAW == "ZH" && station["name_offset"] == "L") ||
+                    (DRAW == "JA" && station["name_offset_ja"] == "L") ||
+                    (DRAW == "KO" && station["name_offset_ko"] == "L")) {
                     ctx.textAlign = "right";
                 }
                 ctx.fillText(name_line_1, posX, posY - NAME_SPACE);

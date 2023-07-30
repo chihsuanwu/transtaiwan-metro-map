@@ -23,7 +23,8 @@
                     "id": "05",
                     "pos": [13, -5],
                     "dir": "B",
-                    "break_en": 6
+                    "break_en": 6,
+                    "break_ko": 4
                 },
                 {
                     "id": "06",

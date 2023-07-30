@@ -13,7 +13,8 @@
                     "id": "03",
                     "pos": [18, 4],
                     "dir": "B",
-                    "break_ja": 6
+                    "break_ja": 6,
+                    "break_ko": 8
                 },
                 {
                     "id": "04",
@@ -45,6 +46,7 @@
                     "break": 2,
                     "break_en": 15,
                     "break_ja": 2,
+                    "break_ko": 2,
                     "name_offset_en": "L"
                 },
                 {
@@ -58,7 +60,8 @@
                     "type": "TR",
                     "dir": "TR",
                     "break": 2,
-                    "break_en": 7
+                    "break_en": 7,
+                    "break_ko": 2
                 },
                 {
                     "id": "11",
@@ -78,7 +81,8 @@
                     "dir": "BR",
                     "break": 2,
                     "break_en": 8,
-                    "break_ja": 2
+                    "break_ja": 2,
+                    "break_ko": 3
                 },
                 {
                     "id": "14",
@@ -204,7 +208,8 @@
                 {
                     "id": "08",
                     "pos": [4, 8],
-                    "dir": "R"
+                    "dir": "R",
+                    "break_ko": 8
                 },
                 {
                     "id": "09",
@@ -220,6 +225,7 @@
                     "break": 2,
                     "break_en": 15,
                     "break_ja": 2,
+                    "break_ko": 2,
                     "name_offset_en": "L"
                 },
                 {
@@ -253,7 +259,8 @@
                     "dir": "BR",
                     "break": 2,
                     "break_en": 10,
-                    "break_ja": 2
+                    "break_ja": 2,
+                    "break_ko": 3
                 },
                 {
                     "id": "16",
@@ -262,12 +269,14 @@
                     "dir": "BR",
                     "break": 2,
                     "break_en": 8,
-                    "break_ja": 2
+                    "break_ja": 2,
+                    "break_ko": 3
                 },
                 {
                     "id": "17",
                     "pos": [14, -4],
-                    "dir": "B"
+                    "dir": "B",
+                    "break_ko": 4
                 },
                 {
                     "id": "18",
@@ -326,7 +335,8 @@
                     "dir": "BR",
                     "break": 2,
                     "break_en": 10,
-                    "break_ja": 2
+                    "break_ja": 2,
+                    "break_ko": 4
                 },
                 {
                     "id": "08",
@@ -335,7 +345,8 @@
                     "dir": "BR",
                     "break": 2,
                     "break_en": 10,
-                    "break_ja": 2
+                    "break_ja": 2,
+                    "break_ko": 3
                 },
                 {
                     "id": "09",
@@ -347,7 +358,8 @@
                     "id": "10",
                     "pos": [4, -10],
                     "dir": "B",
-                    "break_en": 9
+                    "break_en": 9,
+                    "break_ko": 3
                 },
                 {
                     "id": "11",
@@ -356,7 +368,8 @@
                     "dir": "BR",
                     "break": 2,
                     "break_en": 8,
-                    "break_ja": 2
+                    "break_ja": 2,
+                    "break_ko": 3
                 },
                 {
                     "id": "12",
@@ -398,7 +411,8 @@
                 {
                     "id": "19",
                     "pos": [-22, 6],
-                    "dir": "L"
+                    "dir": "L",
+                    "break_ko": 2
                 },
                 {
                     "id": "20",
@@ -507,7 +521,8 @@
                     "type": "TL",
                     "dir": "TR",
                     "break": 2,
-                    "break_en": 7
+                    "break_en": 7,
+                    "break_ko": 2
                 },
                 {
                     "id": "13",
@@ -521,7 +536,8 @@
                     "dir": "BR",
                     "break": 2,
                     "break_en": 10,
-                    "break_ja": 2
+                    "break_ja": 2,
+                    "break_ko": 4
                 },
                 {
                     "id": "15",
@@ -530,7 +546,8 @@
                     "dir": "BR",
                     "break": 2,
                     "break_en": 10,
-                    "break_ja": 2
+                    "break_ja": 2,
+                    "break_ko": 4
                 },
                 {
                     "id": "16",
@@ -539,18 +556,22 @@
                     "break": 2,
                     "break_en": 10,
                     "break_ja": 2,
-                    "name_offset_en": "R"
+                    "break_ko": 4,
+                    "name_offset_en": "R",
+                    "name_offset_ko": "R"
                 },
                 {
                     "id": "17",
                     "pos": [16, 0],
                     "dir": "B",
-                    "break_en": 12
+                    "break_en": 12,
+                    "break_ko": 2
                 },
                 {
                     "id": "18",
                     "pos": [19, 0],
-                    "dir": "B"
+                    "dir": "B",
+                    "break_ko": 5
                 },
                 {
                     "id": "19",
@@ -638,7 +659,8 @@
                     "dir": "BR",
                     "break": 2,
                     "break_en": 10,
-                    "break_ja": 2
+                    "break_ja": 2,
+                    "break_ko": 4
                 },
                 {
                     "id": "11",
@@ -647,7 +669,8 @@
                     "dir": "BR",
                     "break": 2,
                     "break_en": 8,
-                    "break_ja": 2
+                    "break_ja": 2,
+                    "break_ko": 3
                 },
                 {
                     "id": "12",
@@ -796,7 +819,9 @@
                     "id": "20",
                     "pos": [-17, -5],
                     "type": "TER-T",
-                    "dir": "L"
+                    "dir": "L",
+                    "break_en": 10,
+                    "break_ko": 3
                 }
             ]
         },
@@ -831,7 +856,8 @@
                     "type": "TER-T",
                     "dir": "T",
                     "break": 2,
-                    "break_en": 7
+                    "break_en": 7,
+                    "break_ko": 2
                 },
                 {
                     "id": "2",
@@ -858,7 +884,8 @@
                 {
                     "id": "6",
                     "pos": [-26, 6],
-                    "dir": "L"
+                    "dir": "L",
+                    "break_ko": 3
                 },
                 {
                     "id": "7",
@@ -933,6 +960,11 @@
                 {
                     "id": "21",
                     "pos": [-43, 18.5],
+                    "dir": "R"
+                },
+                {
+                    "id": "22",
+                    "pos": [-41.5, 20],
                     "dir": "R",
                     "type": "TER"
                 }
@@ -977,7 +1009,9 @@
                     "pos": [-10, -42.5],
                     "dir": "T",
                     "name_offset": "R",
-                    "name_offset_en": "R"
+                    "name_offset_en": "R",
+                    "name_offset_ja": "R",
+                    "name_offset_ko": "R"
                 },
                 {
                     "id": "08",
@@ -1861,6 +1895,11 @@
                     "id": "20-21",
                     "type": "L",
                     "pts": [-44.5, 17, -43, 18.5]
+                },
+                {
+                    "id": "21-22",
+                    "type": "L",
+                    "pts": [-43, 18.5, -41.5, 20]
                 }
             ]
         },

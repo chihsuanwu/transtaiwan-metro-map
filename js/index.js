@@ -1,10 +1,11 @@
 const MODE = 'LOCAL';
 
-// const DRAW = "ZH";
-const DRAW = "EN";
+const DRAW = "ZH";
+// const DRAW = "EN";
 // const DRAW = "JA";
+// const DRAW = "KO";
 
-let company = 'tmrt';
+let company = 'trtc';
 
 window.onload = async () => {
     document.querySelector(`#btn-${company}`).classList.add('selected');

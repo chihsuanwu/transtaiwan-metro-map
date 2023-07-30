@@ -19,24 +19,28 @@ async function load() {
 }
 
 async function loadStations() {
-    if (company.toLowerCase() == 'trtc') {
-        let trtc = await loadStation('trtc');
-        let tymc = await loadStation('tymc');
-        let ntdlrt = await loadStation('ntdlrt');
-        let ntalrt = await loadStation('ntalrt');
-        return trtc.concat(tymc).concat(ntdlrt).concat(ntalrt);
-    } else if (company.toLowerCase() == 'krtc') {
-        let krtc = await loadStation('krtc');
-        let klrt = await loadStation('klrt');
-        return krtc.concat(klrt);
-    } else if (company.toLowerCase() == 'tmrt') {
-        let tmrt = await loadStation('tmrt');
-        return tmrt;
-    }
+    // if (company.toLowerCase() == 'trtc') {
+    //     let trtc = await loadStation('trtc');
+    //     let tymc = await loadStation('tymc');
+    //     let ntdlrt = await loadStation('ntdlrt');
+    //     let ntalrt = await loadStation('ntalrt');
+    //     return trtc.concat(tymc).concat(ntdlrt).concat(ntalrt);
+    // } else if (company.toLowerCase() == 'krtc') {
+    //     let krtc = await loadStation('krtc');
+    //     let klrt = await loadStation('klrt');
+    //     return krtc.concat(klrt);
+    // } else if (company.toLowerCase() == 'tmrt') {
+    //     let tmrt = await loadStation('tmrt');
+    //     return tmrt;
+    // }
+    let stations = await loadStation();
+    // flatten
+    stations = stations.reduce((acc, val) => acc.concat(val['stations']), []);
+    return stations;
 }
 
-async function loadStation(op) {
-    const path = `${MODE == 'LOCAL' ? '' : 'https://api.transtaiwan.com/'}station_list/${op}.json`;
+async function loadStation() {
+    const path = `${MODE == 'LOCAL' ? '' : 'https://api.transtaiwan.com/'}station_list/all_stations.json`;
     const result = await fetch(path);
     const jsonData = await result.json();
     return jsonData;
@@ -70,6 +74,9 @@ function decode_station(stations) {
                     break;
                 case "JA":
                     key = "name_ja";
+                    break;
+                case "KO":
+                    key = "name_ko";
                     break;
             }
             station_decode[`${station_data["operator"]}_${id}`] = station_data[key];
