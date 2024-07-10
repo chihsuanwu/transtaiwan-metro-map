@@ -4,7 +4,7 @@
         "name": "R",
         "expandable": true,
         "zIndex": 0,
-        "singleLineLength": 24,
+        "singleLineLength": 25,
         "timeDelta": [
             {
                 "from": "R3",
