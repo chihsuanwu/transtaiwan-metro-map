@@ -4,158 +4,71 @@
         "name": "R",
         "expandable": true,
         "zIndex": 0,
-        "singleLineLength": 27,
-        "timeDelta": [
-            {
-                "from": "R02",
-                "to": "R28",
-                "delta":  "22212412212132212222222333"
-            }
-        ]
+        "singleLineLength": 27
     },
     {
         "company": "TRTC",
         "name": "G",
         "expandable": true,
         "zIndex": 2,
-        "singleLineLength": 19,
-        "timeDelta": [
-            {
-                "from": "G01",
-                "to": "G19",
-                "delta": "222222222222232133"
-            }
-        ]
+        "singleLineLength": 19
     },
     {
         "company": "TRTC",
         "name": "O",
         "expandable": true,
         "zIndex": 0,
-        "singleLineLength": 22,
-        "timeDelta": [
-            {
-                "from": "O01",
-                "to": "O21",
-                "delta": "22244231312322232232"
-            },
-            {
-                "from": "O12",
-                "to": "O54",
-                "delta": "32222"
-            }
-        ]
+        "singleLineLength": 22
     },
     {
         "company": "TRTC",
         "name": "BL",
         "expandable": true,
         "zIndex": 0,
-        "singleLineLength": 23,
-        "timeDelta": [
-            {
-                "from": "BL01",
-                "to": "BL23",
-                "delta": "3233213143222221222232"
-            }
-        ]
+        "singleLineLength": 23
     },
     {
         "company": "TRTC",
         "name": "BR",
         "expandable": true,
         "zIndex": 0,
-        "singleLineLength": 24,
-        "timeDelta": [
-            {
-                "from": "BR01",
-                "to": "BR24",
-                "delta": "21223132222332312213221"
-            }
-        ]
+        "singleLineLength": 24
     },
     {
         "company": "TRTC",
         "name": "Y",
         "expandable": true,
         "zIndex": 2,
-        "singleLineLength": 14,
-        "timeDelta": [
-            {
-                "from": "Y07",
-                "to": "Y20",
-                "delta": "3222422243323"
-            }
-        ]
+        "singleLineLength": 14
     },
     {
         "company": "TRTC",
         "name": "R22A",
         "expandable": false,
-        "zIndex": 0,
-        "timeDelta": [
-            {
-                "from": "R22",
-                "to": "R22A",
-                "delta": "3"
-            }
-        ]
+        "zIndex": 0
     },
     {
         "company": "TRTC",
         "name": "G03A",
         "expandable": false,
-        "zIndex": 0,
-        "timeDelta": [
-            {
-                "from": "G03",
-                "to": "G03A",
-                "delta": "4"
-            }
-        ]
+        "zIndex": 0
     },
     {
         "company": "TYMC",
         "name": "A",
         "expandable": false,
-        "zIndex": 1,
-        "timeDelta": [
-            {
-                "from": "A1",
-                "to": "A22",
-                "delta": "553235439333333343542"
-            }
-        ]
+        "zIndex": 1
     },
     {
         "company": "NTDLRT",
         "name": "V",
         "expandable": false,
-        "zIndex": 0,
-        "timeDelta": [
-            {
-                "from": "V01",
-                "to": "V11",
-                "delta": "2222323333"
-            },
-            {
-                "from": "V09",
-                "to": "V26",
-                "delta": "333"
-            }
-        ]
+        "zIndex": 0
     },
     {
         "company": "NTALRT",
         "name": "K",
         "expandable": false,
-        "zIndex": 0,
-        "timeDelta": [
-            {
-                "from": "K01",
-                "to": "K09",
-                "delta": "13224234"
-            }
-        ]
+        "zIndex": 0
     }
 ]

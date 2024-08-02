@@ -1,7 +1,7 @@
 
 async function load() {
 
-    const data = await loadData();
+    const data = parseData(await loadData());
 
     let htmlStr = `<canvas id="canvas_full" width="${data["spec"]['width']}" height="${data["spec"]['height']}" style="border:1px solid #d3d3d3;"></canvas>`;
     for (const line of data['lines']) {
@@ -19,20 +19,6 @@ async function load() {
 }
 
 async function loadStations() {
-    // if (company.toLowerCase() == 'trtc') {
-    //     let trtc = await loadStation('trtc');
-    //     let tymc = await loadStation('tymc');
-    //     let ntdlrt = await loadStation('ntdlrt');
-    //     let ntalrt = await loadStation('ntalrt');
-    //     return trtc.concat(tymc).concat(ntdlrt).concat(ntalrt);
-    // } else if (company.toLowerCase() == 'krtc') {
-    //     let krtc = await loadStation('krtc');
-    //     let klrt = await loadStation('klrt');
-    //     return krtc.concat(klrt);
-    // } else if (company.toLowerCase() == 'tmrt') {
-    //     let tmrt = await loadStation('tmrt');
-    //     return tmrt;
-    // }
     let stations = await loadStation();
     // flatten
     stations = stations.reduce((acc, val) => acc.concat(val['stations']), []);
@@ -58,6 +44,51 @@ async function loadData() {
         "full": await fullResult.json(),
         "single": await singleResult.json()
     };
+}
+
+const zip = (a, b) => a.map((k, i) => [k, b[i]]);
+
+function parseData(data) {
+    const full = data['full'];
+    // get station map
+    // { line: [id1, id2, ...] }
+    let stationMap = {};
+    for (const line of full['stations']) {
+        let stations = [];
+        for (const station of line['data']) {
+            stations.push({
+                "id": station['id'],
+                "pos": station['pos']
+            });
+        }
+        stationMap[line['line']] = stations;
+    }
+
+    // add default line data (line type 'L' is not included in raw data)
+    for (const line of full['lines']) {
+        const lineID = line['line'];
+        const lineData = line['data'];
+
+        const stationList = stationMap[lineID];
+        if (stationList == undefined) {
+            continue;
+        }
+        for (const stationIDs of zip(stationList.slice(0, -1), stationList.slice(1))) {
+            const station1 = stationIDs[0];
+            const station2 = stationIDs[1];
+            const lineDataID = `${station1['id']}-${station2['id']}`;
+            // check if lineDataID exists
+            if (lineData.find(element => element['id'] == lineDataID) == undefined) {
+                lineData.push({
+                    "id": lineDataID,
+                    "type": "L",
+                    "pts": [station1['pos'][0], station1['pos'][1], station2['pos'][0], station2['pos'][1]]
+                });
+            }
+        }
+    }
+
+    return data
 }
 
 function decode_station(stations) {
